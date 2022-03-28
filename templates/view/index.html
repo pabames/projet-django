@@ -1,0 +1,153 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+{% load static %}
+<header class="masthead">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-md-10">
+                <h1 class="text-light animate__animated animate__fadeInDown">
+                    BIENVENUE CHEZ APPS-AGENCY
+                </h1>
+            </div>
+            <div class="col-md-10  mb-5">
+                <h4 class="text-light animate__animated animate__fadeInDown">
+                    Agence freelance  d'assistance visa et marketing digital
+                </h4>
+            </div>
+            <div class="col-md-10">
+                <a href="{% url 'about' %}" class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0 animate__animated animate__fadeInDown"  data-bs-target="#feedbackModal">
+                    <span class="d-flex align-items-center">
+                        <span class="small">A propos de nous</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Quote/testimonial aside-->
+<aside class="text-center bg-black">
+    <div class="container">
+        <div class="row gx-5 align-items-center">
+            <div class="col-md-3">
+                <i class="bi-list"></i>
+                Assistance visa
+            </div>
+            <div class="col-md-3">
+                <i class="bi-list"></i>
+                Developpement web
+            </div>
+            <div class="col-md-3">
+                <i class="bi-list"></i>
+                Design graphic
+            </div>
+            <div class="col-md-3">
+                <i class="bi-list"></i>
+                Developpement applications
+            </div>
+        </div> 
+    </div>
+</aside>
+<!-- App features section-->
+<section id="features">
+    <div class="container px-5">
+        <div class="row gx-5">
+            <div class="col-md-6">
+                <h3 class="text text-black mb-5 animate__animated animate__fadeInDown">
+                    BIENVENUE CHEZ APPS-AGENCY
+                </h3>
+                <p class="mb-5 animate__animated animate__fadeInDown">
+                    Nous vous proposons des services complets de marketing digital  et d'aide à l'obtention des visa d'étude et d'affaire comme vous pourrez le voir ci-dessous.
+                </p>
+                <p class="mt-5">
+                    <ul class="services">
+                        <li>
+                            <a href="{% url 'visa' %}">Assistance visa</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'web' %}">Développement web</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'design' %}">Design graphic</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'application' %}">Développement d'Application</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-6 align-items-center">
+                <img src="{% static 'img/iphone.png' %}" alt="" width="100%" /> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Basic features section-->
+
+<section class="bg-light mb-5 mt-5">
+    <div class="container px-5">
+        <div class="row gx-5">
+            <div class="col-md-3 col-sm-12 px-5">
+                <h2 class="text-items-center">LA TEAM</h2>
+             </div>
+            <div class="col-md-3 col-xs-4 px-5 ">
+                <img src="{% static 'img/users/1.jpg' %}" alt="" width="100%" id="dev"/>
+            </div>
+            <div class="col-md-3 col-xs-4  px-5 ">
+                <img src="{% static 'img/users/2.png' %}" alt="" width="100%" id="dev"/>
+            </div>
+            <div class="col-md-3 col-xs-4 px-5">
+                <img src="{% static 'img/users/3.png' %}" alt="" width="100%" id="dev" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to action section-->
+<section class="cta">
+    <div class="cta-content">
+        <div class="container">
+           <img src="{% static 'img/app.png' %}" alt="" width="100%" />
+        </div>
+    </div>
+</section>
+<!-- App badge section-->
+<section class="" id="download">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'img/logo/foo.png' %}" alt="" width="" height="" />
+                <p class="mt-5">
+                    Agence freelance d'assistance visa et marketing digitale
+                    Nous vous proposons des services complets de marketing digital  et d'aide à l'obtention des visa d'étude et d'affaire comme vous pourrez le voir ci-dessous.
+                </p>
+                <p><a href="{% url 'about' %}">voir plus</a></p>
+            </div>
+            <div class="col-md-4">
+                <h4>Nos adresses</h4>
+                <div class="row mt-5">
+                    <div class="col-md-12 mb-2">
+                        <i class="bi-phone"></i>
+                        +237 693313014 
+                        <br>
+                        <i class="bi-whatsapp"></i>
+                         +237 694330715
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <i class="bi-envelope"></i>
+                        appsagency2022@gmail.com
+                    </div>
+                    <div class="col-md-12 mb-2">
+                        <i class="bi-globe"></i>
+                        apps-agency.herokuapp.com
+                    </div>
+                    <div class="col-md-12">
+                        <i class="bi-geo-alt"></i>
+                        Ange Raël
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+{% endblock %}
